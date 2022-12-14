@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RegdialogComponent } from './regdialog/regdialog.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {LandrModule} from './landr/landr.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegdialogComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    LandrModule
   ],
   providers: [],
   bootstrap: [AppComponent]
